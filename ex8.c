@@ -7,8 +7,9 @@ int main(int argc, char *argv[])
 	char full_name[] = {
 		'Z','e','d',' ',
 		'A','.',' ',
-		'S','h','o','w'
+		'S','h','o','w','\0'
 	};
+	char full_name_new[] = "Zed A. Shaw";
 
 	printf("This size of an int: %ld\n", sizeof(int));
 	printf("This size of areas (int[]):%ld\n",sizeof(areas));
@@ -21,6 +22,7 @@ int main(int argc, char *argv[])
 
 	printf("The size of full_name (char[]):%ld\n", sizeof(full_name));
 	printf("The number of chars: %ld\n", sizeof(full_name) / sizeof(char));
+	printf("The size of full name_new (full_name_new): %ld\n",sizeof(full_name_new));
 
 	printf("name = \"%s\" and full_name = \"%s\"\n", name, full_name);
 
